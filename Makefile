@@ -17,7 +17,7 @@ install-types:	## Find and install additional types for mypy
 	poetry run mypy --install-types --non-interactive ./
 
 poetry-download:	## Download and install poetry
-	curl -sSL https://install.python-poetry.org | python -
+	curl -sSL https://install.python-poetry.org | python3 -
 
 lint: pre-commit	## Alias for the pre-commit target
 
